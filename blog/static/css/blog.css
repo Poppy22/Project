@@ -1,3 +1,36 @@
-h1 a {
-    color: #FCA205;
+div.title{
+	font-size:80px;
+	background-color:#ff8533;
+	text-shadow: 4px 2px #ffffff;
+	color:#000000;
+	text-align:right;
+	margin:0;
+}
+
+iframe {
+    display: block;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border: 0;
+}
+
+.button {
+    background:#00b377;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 25px;
+    height: 80px;
+    width: 200px;
+    line-height: 60px;
+    margin: 25px 25px;
+    text-align: center;
+    border: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 0 5px #00b377;
+  background: #ff8533
+;
 }
