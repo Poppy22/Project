@@ -1,15 +1,24 @@
 {% load staticfiles %}
 <html>
 <head>
+<meta charset="utf-8">
+	<script src="js/bower_components/jquery-2.1.4.min/index.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 <title> Binary CookBook </title>
 </head>
 <body>
-<div class="title">
-Binary CookBook 
-</div>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6"><img class="title-logo" src="http://placehold.it/100x100" alt="page logo"></div>
+      <div class="col-md-6 text-right text-uppercase">
+        <h1 class="title-super text-thin">Binary CookBook</h1>
+		</div>
+    </div>
 <div class="menu">
 <a href="#" target="#"> <button type="button" class="button"> Home </button> </a>
 <a href="#" target="#"> <button type="button" class="button"> Add ingredients </button> </a>

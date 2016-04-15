@@ -6,7 +6,9 @@ div.title{
 	text-align:right;
 	margin:0;
 }
-
+.col-6{
+	width:50%;
+}
 
 .button {
 	position: relative;
