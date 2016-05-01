@@ -2,32 +2,138 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<script src="js/bower_components/jquery-2.1.4.min/index.js" ></script>
-	<script src="js/bootstrap.min.js" ></script>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<script src="js/bower_components/jquery-2.1.4.min/index.js" ></script>
+<script src="js/bootstrap.min.js" ></script>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 <title> Binary CookBook </title>
 </head>
+
 <body>
-<div class="container">
-    <div class="row">
-      <div class="col-md-12"></div>
-        <h1 class="title-super text-thin">Binary CookBook</h1>
+
+<div id="fix">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#menu" class="btn btn-info"> Home </a>
+				<a href="#about" class="btn btn-danger"> About </a>
+				<a href="#form" class="btn btn-success"> Add ingredients </a>
+				<a href="#fav" class="btn btn-warning"> Favorite Recipes </a>
+				<a href="#tips" class="btn btn-primary"> Cooking tips </a>
+			</div>
 		</div>
- </div>
-<div class="menu">
-<a href="#" target="#"> <button type="button" class="button"> Home </button> </a>
-<a href="#" target="#"> <button type="button" class="button"> Add ingredients </button> </a>
-<a href="#" target="#"> <button type="button" class="button"> Favorite recipes </button> </a>
-<a href="#" target="#"> <button type="button" class="button"> Cooking tips </button> </a>
-<a href="#" target="#"> <button type="button" class="button"> Log in </button> </a>
+	</div>
 </div>
 
-<div class="content">
-<center> <img src="{%static 'pictures/book.png' %}" title="here should be an iframe" width="600px" height="500px">
+<div id="menu">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="jumbotron">
+				<h1 class="text-center"> <i> Binary CookBook </i> </h1>
+				<hr>
+			</div>
+		</div>
+	</div>
+
+	<div id="img"> </div>
 </div>
 
+<div id="about" data-spy="scroll">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<h3> <mark> Binary CookBook</mark>  is an interactive and useful web application that helps you discover and prepare the most convient meals for your lifestyle. 
+				</h3> <br>
+				<blockquote> Are you in a hurry? Have you run out of ideas of what to cook? Or do you simply feel like trying something new and adventurous? <br> <hr> 
+				Well, then this app is for <mark>you</mark>. Just open the fridge, choose a number of ingredients and add them to this site and <abbr title="Binary CookBook"> BCB </abbr> will suggest what you can cook using them,
+				as well as step by step cooking instructions.
+				</blockquote>
+				<br>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Read more</button>
+					<div id="demo" class="collapse">
+					<br> 
+					This app was created using Python, Django and Scrapy during the mentorship program 'Learn IT, girl!' :) <br> <label>Bon appetite! </label>
+					</div>
+			</div>
+			<div class="col-md-6">
+				<img src="http://www.webquestdirect.com.au/aes/img/images/cookbook.gif">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="form">
+help
+</div>
+
+<div id="fav">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="https://s-media-cache-ak0.pinimg.com/originals/f7/d6/43/f7d643dbf0cfe6feea68db5a7e2355f1.jpg" width="400px" height="500px">
+			</div>
+			<div class="col-md-6">
+				<h3> You don't have any recipes introduced yet. Please add your favourite recipes or go make a sandwich. Complex cooking is not for you. </h3>
+			</div>
+</div>
+
+<div id="tips">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2> <mark> Cooking tips </mark> </h2> 
+				<hr color="grey">
+				<div class="list-group">
+					<div class="list-group-item-info">
+						<br>
+						<h5 class="list-group-item-heading">Cook pasta 1 minute less than the package instructions and cook it the rest of the way in the pan with sauce.</h5>
+						<p class="list-group-item-text"> <b> Mario Batali </b>  <br> <i>  Iron Chef America </i> </p>
+					</div>
+					<div class="list-group-item-danger">
+						<br>
+						<h5 class="list-group-item-heading">Take the time to actually read recipes through before you begin. </h5>
+						<p class="list-group-item-text"> <b> John Besh </b> <br> <i> Author of <u> My New Orleans </u> </i> </p>
+					</div>
+					<div class="list-group-item-success">
+						<br>
+						<h5 class="list-group-item-heading">Recipes are only a guideline, not the Bible. Feel comfortable replacing ingredients with similar ingredients that you like. If you like oregano but not thyme, use oregano.</h5>
+						<p class="list-group-item-text"> <b> Alex Seidel </b> <br> <i> Fruition, Denver </i> </p>
+					</div>
+					<div class="list-group-item-primary">
+						<br>
+						<h5 class="list-group-item-heading">Always measure what you're baking. No shortcuts in pastry: it's a science.</h5>
+						<p class="list-group-item-text"><b> Francois Payard </b> <br> <i>  Francois Payard Bakery, New York City </i> </p>
+					</div>
+					<div class="list-group-item-warning">
+						<br>
+						<h5 class="list-group-item-heading">If you're cooking for someone important — whether it's your boss or a date — never try a new recipe and a new ingredient at the same time.</h5>
+						<p class="list-group-item-text"> <b> Marcus Samuelsson </b> <br> <i> Red Rooster, New York City </i> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</body>
 </html>

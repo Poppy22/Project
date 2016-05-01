@@ -1,45 +1,44 @@
-div.title{
-	font-size:80px;
-	background-color:#f98866;
-	text-shadow: 4px 2px #ffffff;
-	color:#000000;
-	text-align:right;
-	margin:0;
-}
-.col-12{
-	width:50%;
-}
-
-.button {
-	position: relative;
-    background-color: #80bd9e;
-    font-size: 20px;
-	color: white;
+.jumbotron{
+	color:turquoise;
 	text-transform:uppercase;
-    padding: 4px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 9px 0px black, 0px 9px 25px black;
-    -moz-box-shadow: 0px 9px 0px black, 0px 9px 25px black;
-    box-shadow: 0px 9px 0px black, 0px 9px 25px black;
-	width: 262px;
-	text-align: center;
-	
-	-webkit-transition: all .1s ease;
-	-moz-transition: all .1s ease;
-	-ms-transition: all .1s ease;
-	-o-transition: all .1s ease;
-	transition: all .1s ease;
+	height:30vh;
+	background-color:#E8E8E8;
 }
 
-.button:active {
-    -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
-    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
-    box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+#img {
+	background-image: url("https://cdn.creativelive.com/fit/https%3A%2F%2Fcdn.creativelive.com%2Fagc%2Fcourses%2F5138-1.jpg/1600");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.button:hover{
-	background-color:#89da59;
+#fix{
+	position:fixed;
+}
+
+#about,
+#add,
+#fav,
+#form,
+#tips
+{
+	text-align:center;
+	height:100vh;
+	padding-top:20vh;
+	padding-bottom:20vh;
+	line-height:30px;
+}
+body{
+	overflow-x:hidden;
+	background-color:#E8E8E8;
+}
+.btn{
+	width:19vw;
+	height:6vh;
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:bold;
 }
 
