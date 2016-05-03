@@ -19,7 +19,7 @@
 			<div class="col-md-12">
 				<a href="#menu" class="btn btn-info"> Home </a>
 				<a href="#about" class="btn btn-danger"> About </a>
-				<a href="#form" class="btn btn-success"> Add ingredients </a>
+				<a href="#add" class="btn btn-success"> Add ingredients </a>
 				<a href="#fav" class="btn btn-warning"> Favorite Recipes </a>
 				<a href="#tips" class="btn btn-primary"> Cooking tips </a>
 			</div>
@@ -66,8 +66,15 @@
 	</div>
 </div>
 
-<div id="form">
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<div id="add">
+	<div class="container">
+		<form role="form">
+			<div class="form-group">
+				<label for="usr">Please add the ingredients one by one:</label>
+				<input type="text" class="form-control" id="usr">
+			</div>
+		</form>
+	</div>
 </div>
 
 <div id="fav">
@@ -125,12 +132,23 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
 <div id="footer">
 				{% for post in posts %}
 					<p> Published: {{ post.published_date }}
 					<b> | </b> Title: <a href="">{{ post.title }} </a>
 					<b> | </b> About: {{ post.text}} </p>
 				{% endfor %}
+=======
+<div>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+>>>>>>> 67647ef379ce00eff3df7e068db7be24044a0f23
 </div>
 
 <script type="text/javascript">
