@@ -13,8 +13,7 @@
 
 <body>
 
-<div id="fix">
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
    <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -24,7 +23,7 @@
      </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav data-navbar">
         <li> <a class="btn btn-info" href="#menu"> Home </a> </li>
         <li><a class="btn btn-danger" href="#about"> About </a></li>
         <li><a class="btn btn-primary" href="#add"> Add ingredients </a></li>
@@ -34,7 +33,7 @@
     </div>
   </div>
 </nav>
-</div>
+
 
 <!-- <div id="fix">
 	<div class="container-fluid">
@@ -157,24 +156,13 @@
 	</div>
 </div>
 
-<<<<<<< HEAD
-<div id="footer">
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
 				{% for post in posts %}
 					<p> Published: {{ post.published_date }}
 					<b> | </b> Title: <a href="">{{ post.title }} </a>
 					<b> | </b> About: {{ post.text}} </p>
 				{% endfor %}
-=======
-<div>
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
-    </div>
-{% endfor %}
->>>>>>> 67647ef379ce00eff3df7e068db7be24044a0f23
-</div>
+</nav>
 
 <script type="text/javascript">
 	$(function() {

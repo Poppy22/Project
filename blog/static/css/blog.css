@@ -14,12 +14,6 @@
     background-size: cover;
 }
 
-#fix
-{
-	position:fixed;
-	z-index: 1;
-	width:100%;
-}
 
 #footer{
     position: fixed;
@@ -44,7 +38,8 @@
 	line-height:30px;
 }
 
-body{
+body,
+.navbar-inverse{
 	overflow-x:hidden;
 	background-color:#E8E8E8;
 }
@@ -56,4 +51,5 @@ body{
 	text-align:center;
 	font-weight:bold;
 }
+
 
