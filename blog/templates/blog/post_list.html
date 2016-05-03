@@ -23,12 +23,12 @@
      </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav data-navbar">
-        <li> <a class="btn btn-info" href="#menu"> Home </a> </li>
-        <li><a class="btn btn-danger" href="#about"> About </a></li>
-        <li><a class="btn btn-primary" href="#add"> Add ingredients </a></li>
-        <li><a class="btn btn-warning" href="#fav">Favorite recipes </a></li>
-        <li><a class="btn btn-success" href="#tips">Cooking tips </a></li>
+      <ul class="nav navbar-nav">
+        <li> <a href="#menu" class="btn btn-info" > Home </a> </li>
+        <li><a href="#about" class="btn btn-danger" > About </a></li>
+        <li><a href="#add" class="btn btn-primary" > Add ingredients </a></li>
+        <li><a href="#fav" class="btn btn-warning"> Favorite recipes </a></li>
+        <li><a href="#tips" class="btn btn-success" >Cooking tips </a></li>
       </ul> 
     </div>
   </div>
@@ -55,8 +55,9 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="jumbotron">
-				<h1 class="text-center"> <i> Binary CookBook </i> </h1>
-				<hr>
+				<h1 class="text-center"> <span class="glyphicon glyphicon-book"></span>
+				<i> Binary CookBook </i> 
+				<span class="glyphicon glyphicon-book"></span></h1>
 			</div>
 		</div>
 	</div>
@@ -68,6 +69,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
+				<br> <br> <br>
 				<h3> <mark> Binary CookBook</mark>  is an interactive and useful web application that helps you discover and prepare the most convient meals for your lifestyle. 
 				</h3> <br>
 				<blockquote> Are you in a hurry? Have you run out of ideas of what to cook? Or do you simply feel like trying something new and adventurous? <br> <hr> 
@@ -92,11 +94,13 @@
 
 <div id="add">
 	<div class="container">
-		<form role="form">
+		<form action="demo_form_method.asp" method="get" target="_blank" role="form">
 			<div class="form-group">
+				<br> <br> <br> <br> 
 				<label for="usr">Please add the ingredients one by one:</label>
 				<input type="text" class="form-control" id="usr">
 			</div>
+		<input type="submit" value="Submit">
 		</form>
 	</div>
 </div>
@@ -104,6 +108,7 @@
 <div id="fav">
 	<div class="container">
 		<div class="row">
+			<br> 
 			<div class="col-md-6">
 				<img src="https://s-media-cache-ak0.pinimg.com/originals/f7/d6/43/f7d643dbf0cfe6feea68db5a7e2355f1.jpg" width="400px" height="500px">
 			</div>
