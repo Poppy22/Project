@@ -2,13 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script src="js/bower_components/jquery-2.1.4.min/index.js" ></script>
-<script src="js/bootstrap.min.js" ></script>
-<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link rel="icon" href="http://www.abeka.com/BookImages/ClipArt/277193/46x46y50fx50fh/277193-Slice-of-Pizza-pepperoni-color-png.png">
 <title> Binary CookBook </title>
 </head>
 
@@ -51,22 +50,24 @@
 				Well, then this app is for <mark>you</mark>. Just open the fridge, choose a number of ingredients and add them to this site and <abbr title="Binary CookBook"> BCB </abbr> will suggest what you can cook using them,
 				as well as step by step cooking instructions.
 				</blockquote>
-				<br>
+			</div>
+			<div class="col-md-6">
+				<img src="http://www.webquestdirect.com.au/aes/img/images/cookbook.gif">
+				<br> <br> <br>
+				<div class="col-md-12">	
 					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Read more</button>
 					<div id="demo" class="collapse">
 					<br> 
 					This app was created using Python, Django and Scrapy during the mentorship program 'Learn IT, girl!' :) <br> <label>Bon appetite! </label>
 					</div>
-			</div>
-			<div class="col-md-6">
-				<img src="http://www.webquestdirect.com.au/aes/img/images/cookbook.gif">
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
 <div id="form">
-help
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 </div>
 
 <div id="fav">
@@ -76,7 +77,12 @@ help
 				<img src="https://s-media-cache-ak0.pinimg.com/originals/f7/d6/43/f7d643dbf0cfe6feea68db5a7e2355f1.jpg" width="400px" height="500px">
 			</div>
 			<div class="col-md-6">
-				<h3> You don't have any recipes introduced yet. Please add your favourite recipes or go make a sandwich. Complex cooking is not for you. </h3>
+				<br> <br> <br>
+				<h3> Please add your favorite recipes. </h3>
+				<br> <br> <br>
+			</div>
+			<div class="col-md-6">
+			<a href="" class="btn btn-danger"> Add to favorites <span class="glyphicon glyphicon-heart"> </span> </a>
 			</div>
 </div>
 
@@ -84,6 +90,7 @@ help
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
+				<br> 
 				<h2> <mark> Cooking tips </mark> </h2> 
 				<hr color="grey">
 				<div class="list-group">
@@ -116,6 +123,14 @@ help
 			</div>
 		</div>
 	</div>
+</div>
+
+<div id="footer">
+				{% for post in posts %}
+					<p> Published: {{ post.published_date }}
+					<b> | </b> Title: <a href="">{{ post.title }} </a>
+					<b> | </b> About: {{ post.text}} </p>
+				{% endfor %}
 </div>
 
 <script type="text/javascript">
