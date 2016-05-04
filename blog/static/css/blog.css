@@ -18,7 +18,6 @@
 #about,
 #add,
 #fav,
-#add,
 #tips
 {
 	text-align:center;
@@ -38,18 +37,24 @@ body
 .navbar-inverse{
 	background-color:#E8E8E8;
 	width:100%;
+	border-color:#E8E8E8;
 }
 
 .btn{
-	width:19vw;
-	height:6vh;
 	text-transform:uppercase;
-	text-align:center;
-	margin:auto;
 	font-weight:bold;
-	color:#FFFFFF;
-	vertical-align:middle;
+	color:#000000 !important;
+	text-align:center;
+	width:19vw;
+	height:8vh;
+	border-color:#E8E8E8;
+	border-width:3px;
+	
 }
+
+
+
+
 
 
 

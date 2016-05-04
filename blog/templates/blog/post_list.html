@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -22,10 +22,10 @@
         <span class="icon-bar"></span>             
      </button>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+    <div class="navbar-collapse collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-center">
         <li> <a href="#menu" class="btn btn-info" > Home </a> </li>
-        <li><a href="#about" class="btn btn-danger" > About </a></li>
+		<li><a href="#about" class="btn btn-danger" > About </a></li>
         <li><a href="#add" class="btn btn-primary" > Add ingredients </a></li>
         <li><a href="#fav" class="btn btn-warning"> Favorite recipes </a></li>
         <li><a href="#tips" class="btn btn-success" >Cooking tips </a></li>
@@ -65,19 +65,21 @@
 	<div id="img"> </div>
 </div>
 
-<div id="about" data-spy="scroll">
+<div id="about">  <!--data-spy="scroll" -->
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
 				<br> <br> <br>
 				<h3> <mark> Binary CookBook</mark>  is an interactive and useful web application that helps you discover and prepare the most convient meals for your lifestyle. 
 				</h3> <br>
-				<blockquote> Are you in a hurry? Have you run out of ideas of what to cook? Or do you simply feel like trying something new and adventurous? <br> <hr> 
+				<blockquote> Are you in a hurry? Have you run out of ideas of what to cook? Or do you simply feel like trying something new and adventurous? 
+				<br> <hr color="black"> 
 				Well, then this app is for <mark>you</mark>. Just open the fridge, choose a number of ingredients and add them to this site and <abbr title="Binary CookBook"> BCB </abbr> will suggest what you can cook using them,
 				as well as step by step cooking instructions.
 				</blockquote>
 			</div>
 			<div class="col-md-6">
+				<br> <br>
 				<img src="http://www.webquestdirect.com.au/aes/img/images/cookbook.gif">
 				<br> <br> <br>
 				<div class="col-md-12">	
