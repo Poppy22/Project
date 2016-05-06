@@ -94,22 +94,36 @@
 	</div>
 </div>
 
+{%block content%}
+<!-- You will surround this div by the block content placeholder To be able to deal with django Check the base.html for example-->
 <div id="add">
-	<div class="container">
-	<div class="row">
 	<div class="col-md-12 col-sm-12 col-xs-12>
-		<form action="demo_form_method.asp" method="get" target="_blank" role="form">
-			<div class="form-group">
-				<br> <br> <br> <br> 
-				<label for="usr">Please add the ingredients one by one:</label>
-				<input type="text" class="form-control" id="usr">
+		<h4> Add the ingredients one by one: </h4>
+		<form method="POST" class="post-form">{% csrf_token %} <!-- taking the POST object here -->
+	<div class = "row">
+		<div class = "col-lg-4 col-lg-offset-4">
+			<div class = "input-group"> <!-- a custom class from bootstrap to group the input field and the submit button-->
+				<!--{{ form.ingredient}}-->
+				<!-- The input field -->
+				<input type = "text" class = "form-control" name ="{{form.ingredient.name}}"
+				 id="id_{{form.ingredient.name}}"
+				 placeholder="Search for ingredients..."> <!--This is the connection part --> 
+				 <!--input here is the input field its name and id will be determined by the form
+				 We are telling it to take them from form.ingredient.name -->
+				<!-- The submit button -->
+				<span class = "input-group-btn">
+				  	<button class = "btn btn-default" type = "submit">
+				     		Search
+				  	</button>
+			       </span>	
 			</div>
-		<input type="submit" value="Submit">
-		</form>
+		</div>
 	</div>
-	</div>
+    </form>
 	</div>
 </div>
+{% endblock %} 
+
 
 <div id="fav">
 	<div class="container">
@@ -126,12 +140,14 @@
 			<a href="" class="btn btn-danger"> Add to favorites <span class="glyphicon glyphicon-heart"> </span> </a>
 			</div>
 </div>
+</div>
+</div>
+
 
 <div id="tips">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 col-xs-12 col-sm-12">
-				<br> 
+			<div class="col-md-12 col-xs-12 col-sm-12"> 
 				<h2> <mark> Cooking tips </mark> </h2> 
 				<hr color="grey">
 				<div class="list-group">
@@ -166,13 +182,7 @@
 	</div>
 </div>
 
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-				{% for post in posts %}
-					<p> Published: {{ post.published_date }}
-					<b> | </b> Title: <a href="">{{ post.title }} </a>
-					<b> | </b> About: {{ post.text}} </p>
-				{% endfor %}
-</nav>
+
 
 <script type="text/javascript">
 	$(function() {
