@@ -9,6 +9,9 @@ class Post(models.Model):
 	created_date = models.DateTimeField(default=timezone.now)
 	published_date = models.DateTimeField(blank=True, null=True)
 
+class Ingredient(models.Model):
+	ingredient = models.CharField(max_length=100)
+
 	def publish(self):
 		self.published_date = timezone.now()
 		self.save()
